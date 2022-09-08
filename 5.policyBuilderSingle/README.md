@@ -32,7 +32,7 @@ The goal of this lab is to manage Policy Builder Suggestions an A.WAF Policy on 
 
 ## Policy Creation
 
-We already have exported a WAF Policy called **scenario5.json** [available here](https://raw.githubusercontent.com/fchmainy/awaf_tf_docs/main/0.Appendix/scenario5_wLearningSuggestions.json) including several Policy Builder Suggestions so you won't have to generate traffic.
+We already have exported a WAF Policy called **scenario5.json** [available here](https://raw.githubusercontent.com/f5devcentral/awaf-terraform/main/0.Appendix/scenario5_wLearningSuggestions.json) including several Policy Builder Suggestions so you won't have to generate traffic.
 
 So you have to create 4 files:
 
@@ -69,7 +69,7 @@ provider "bigip" {
 }
 
 data "http" "scenario5" {
-  url = "https://raw.githubusercontent.com/fchmainy/awaf_tf_docs/main/0.Appendix/Common_scenario5__2022-8-12_15-49-28__prod1.f5demo.com.json"
+  url = "https://raw.githubusercontent.com/f5devcentral/awaf-terraform/main/0.Appendix/Common_scenario5__2022-8-12_15-49-28__prod1.f5demo.com.json"
   request_headers = {
   	Accept = "application/json"
   }
